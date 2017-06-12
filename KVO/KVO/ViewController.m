@@ -7,20 +7,19 @@
 //
 
 #import "ViewController.h"
-#import "Dog.h"
-#import "NSKVONotifying_Dog.h"
+#import "Person.h"
+#import "NSObject+KVO.h"
 @interface ViewController ()
-
-@property(nonatomic, strong)Dog *d;
+@property(nonatomic, strong)Person *p;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    self.d=[NSKVONotifying_Dog new];
-    [self.d addObserver:self forKeyPath:@"age" options:NSKeyValueObservingOptionNew context:nil];
+    self.p=[Person new];
+    [self.p ZL_addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
+   
 }
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
 {
@@ -28,7 +27,8 @@
 }
 //isa指针，指向它的真实指针；
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    self.d.age=99;
+    
+    self.p.name=[NSString stringWithFormat:@"%d",arc4random_uniform(20)];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

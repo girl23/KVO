@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BD1ABC71EEE798900F671A5 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD1ABC61EEE798900F671A5 /* Person.m */; };
+		2BD1ABCA1EEE79A600F671A5 /* NSObject+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD1ABC91EEE79A600F671A5 /* NSObject+KVO.m */; };
 		2BE7F8A01ED7B17A002CC7C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE7F89F1ED7B17A002CC7C4 /* main.m */; };
 		2BE7F8A31ED7B17A002CC7C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE7F8A21ED7B17A002CC7C4 /* AppDelegate.m */; };
 		2BE7F8A61ED7B17A002CC7C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE7F8A51ED7B17A002CC7C4 /* ViewController.m */; };
@@ -16,8 +18,6 @@
 		2BE7F8B11ED7B17A002CC7C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE7F8AF1ED7B17A002CC7C4 /* LaunchScreen.storyboard */; };
 		2BE7F8BC1ED7B17A002CC7C4 /* KVOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE7F8BB1ED7B17A002CC7C4 /* KVOTests.m */; };
 		2BE7F8C71ED7B17A002CC7C4 /* KVOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE7F8C61ED7B17A002CC7C4 /* KVOUITests.m */; };
-		2BE7F8D91ED7B216002CC7C4 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE7F8D81ED7B216002CC7C4 /* Dog.m */; };
-		2BE7F8DC1ED7B59D002CC7C4 /* NSKVONotifying_Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE7F8DB1ED7B59D002CC7C4 /* NSKVONotifying_Dog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BD1ABC51EEE798900F671A5 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		2BD1ABC61EEE798900F671A5 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		2BD1ABC81EEE79A600F671A5 /* NSObject+KVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVO.h"; sourceTree = "<group>"; };
+		2BD1ABC91EEE79A600F671A5 /* NSObject+KVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVO.m"; sourceTree = "<group>"; };
 		2BE7F89B1ED7B17A002CC7C4 /* KVO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KVO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE7F89F1ED7B17A002CC7C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2BE7F8A11ED7B17A002CC7C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,10 +59,6 @@
 		2BE7F8C21ED7B17A002CC7C4 /* KVOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KVOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE7F8C61ED7B17A002CC7C4 /* KVOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOUITests.m; sourceTree = "<group>"; };
 		2BE7F8C81ED7B17A002CC7C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2BE7F8D71ED7B216002CC7C4 /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
-		2BE7F8D81ED7B216002CC7C4 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
-		2BE7F8DA1ED7B59D002CC7C4 /* NSKVONotifying_Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSKVONotifying_Dog.h; sourceTree = "<group>"; };
-		2BE7F8DB1ED7B59D002CC7C4 /* NSKVONotifying_Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSKVONotifying_Dog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,16 +113,16 @@
 				2BE7F8A21ED7B17A002CC7C4 /* AppDelegate.m */,
 				2BE7F8A41ED7B17A002CC7C4 /* ViewController.h */,
 				2BE7F8A51ED7B17A002CC7C4 /* ViewController.m */,
+				2BD1ABC81EEE79A600F671A5 /* NSObject+KVO.h */,
+				2BD1ABC91EEE79A600F671A5 /* NSObject+KVO.m */,
+				2BD1ABC51EEE798900F671A5 /* Person.h */,
+				2BD1ABC61EEE798900F671A5 /* Person.m */,
 				2BE7F8A71ED7B17A002CC7C4 /* Main.storyboard */,
 				2BE7F8AD1ED7B17A002CC7C4 /* Assets.xcassets */,
 				2BE7F8AF1ED7B17A002CC7C4 /* LaunchScreen.storyboard */,
 				2BE7F8B21ED7B17A002CC7C4 /* Info.plist */,
 				2BE7F8AA1ED7B17A002CC7C4 /* KVO.xcdatamodeld */,
 				2BE7F89E1ED7B17A002CC7C4 /* Supporting Files */,
-				2BE7F8D71ED7B216002CC7C4 /* Dog.h */,
-				2BE7F8D81ED7B216002CC7C4 /* Dog.m */,
-				2BE7F8DA1ED7B59D002CC7C4 /* NSKVONotifying_Dog.h */,
-				2BE7F8DB1ED7B59D002CC7C4 /* NSKVONotifying_Dog.m */,
 			);
 			path = KVO;
 			sourceTree = "<group>";
@@ -289,11 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BE7F8D91ED7B216002CC7C4 /* Dog.m in Sources */,
 				2BE7F8AC1ED7B17A002CC7C4 /* KVO.xcdatamodeld in Sources */,
 				2BE7F8A61ED7B17A002CC7C4 /* ViewController.m in Sources */,
+				2BD1ABCA1EEE79A600F671A5 /* NSObject+KVO.m in Sources */,
+				2BD1ABC71EEE798900F671A5 /* Person.m in Sources */,
 				2BE7F8A31ED7B17A002CC7C4 /* AppDelegate.m in Sources */,
-				2BE7F8DC1ED7B59D002CC7C4 /* NSKVONotifying_Dog.m in Sources */,
 				2BE7F8A01ED7B17A002CC7C4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
